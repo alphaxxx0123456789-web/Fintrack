@@ -134,3 +134,4 @@ Le frontend (React/Vite) actuellement en mode simulation (`AuthContext.tsx` avec
 - **Base de données** : SQLite est utilisé pour la simplicité (zéro configuration, un seul fichier `fintrack.sqlite`). Pour la production, il suffit de changer le `type` dans `app.module.ts` (ex : `postgres`) et d'ajuster les identifiants de connexion — TypeORM gère nativement plusieurs SGBD.
 - **API externe** : `open.er-api.com` est gratuite et ne nécessite aucune clé. Le code inclut une gestion d'erreur si le service est injoignable ou si une devise est invalide.
 - **Bonus non implémentés** (Redis, Prometheus/Grafana, CI/CD, tests automatisés, Docker, déploiement) : à ajouter selon le temps disponible avant la deadline — l'architecture modulaire actuelle s'y prête bien.
+Test de commit - dashboard analytics
