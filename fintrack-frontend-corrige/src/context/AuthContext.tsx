@@ -27,7 +27,9 @@ function toUser(apiUser: ApiUser): User {
     monthlyBudget: apiUser.monthlyBudget,
   }
 }
-
+//Fourniit le contexte d'authentification de toute l'application
+//Géger le login,l'inscription,la déconnexion et la persistance
+//su token JWT(localstorage) via le client api.ts connecter au backend NestJS.
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   // loading=true tant qu'on n'a pas vérifié une éventuelle session existante
   const [state, setState] = useState<AuthState>({
