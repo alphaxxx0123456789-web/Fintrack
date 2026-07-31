@@ -192,11 +192,6 @@ function AddTransactionModal({ onClose, onCreated }: { onClose:()=>void; onCreat
 }
 
 /* ─── VUE : Overview ─────────────────────────────────────────── */
-// Vue principale du dashboard : affiche le solde, revenus/dépenses,
-// le graphique d'évolution mensuelle et la répartition par catégorie.
-// Les données (categoryStats, monthlyData) sont calculées dynamiquement
-// à partir des transactions réelles récupérées via l'API.
-function OverviewView({ user, transactions, categoryStats, monthlyData }: {
 function OverviewView({ user, transactions }: { user:any; transactions:Transaction[] }) {
   const inc   = getTotalIncome(transactions)
   const exp   = getTotalExpense(transactions)
