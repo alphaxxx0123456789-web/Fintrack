@@ -1,3 +1,5 @@
+//Page d'accueil publique de Fintrack : prsente l'application
+//avant connexion et redirige vers / login ou /a registre
 import { Link } from 'react-router-dom'
 import {
   TrendingUp, Shield, BarChart3, Zap, ArrowRight,
